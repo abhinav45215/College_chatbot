@@ -1,0 +1,225 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "Is anyone there?",
+        "How are you?"
+      ],
+      "responses": [
+        "Hey there! How can I assist you today?",
+        "Hello! Hope you're doing well. What can I do for you?",
+        "Hi! What brings you here today?",
+        "Nice to see you! How can I help?",
+        "Hey! Whats on your mind?",
+        "Hello! Need any information?",
+        "Hi! Hows your day going?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
+      "responses": [
+        "Goodbye! Have a great day ahead!",
+        "Take care! Feel free to return anytime.",
+        "See you later! Let me know if you ever need help.",
+        "Bye! Looking forward to our next chat.",
+        "Farewell! Hope to see you again soon.",
+        "Goodbye! Have a wonderful time.",
+        "See you next time! Stay safe."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot",
+        "I appreciate it"
+      ],
+      "responses": [
+        "You're very welcome! Let me know if you need anything else.",
+        "Glad I could help! Feel free to ask anything.",
+        "Happy to assist! Let me know if there's anything more I can do.",
+        "No problem! Always here to help.",
+        "Anytime! Let me know if you need more info.",
+        "You're welcome! Need any more details?",
+        "Glad to be of help! Anything else?"
+      ]
+    },
+    {
+      "tag": "holidays",
+      "patterns": [
+        "When are the holidays?",
+        "What kinds of holidays are there?",
+        "Tell me about holidays",
+        "How many days do we get after each semester?",
+        "Do we get study leave?"
+      ],
+      "responses": [
+        "Holidays depend on the academic calendar. Usually, there are semester breaks, national holidays, and festival holidays. Do you want details on specific ones?",
+        "Yes, study leave is usually granted before exams. I can provide a breakdown if you need.",
+        "Each department may have its own holiday schedule. You can check with your department for specific dates.",
+        "Semester breaks usually last a few weeks, giving students time to relax or prepare for the next term.",
+        "National and festival holidays are observed every year. Would you like a list of upcoming holidays?",
+        "You can check the official academic calendar for a complete holiday list. Need help finding it?"
+      ]
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "Who are the teachers?",
+        "Can you tell me more about the faculty?",
+        "Who is the principal?",
+        "Who is the placement officer?"
+      ],
+      "responses": [
+        "Our Principal is Dr. Chandrakant Kothare\n\n and our Placement Cell is led by Prof. Umesh Galat. and\n\n other departmental faculties are \n"
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "Which courses are offered?",
+        "Tell me about BCA",
+        "What is MTECH?",
+        "How long does MCA take?",
+        "Are there any medical courses?"
+      ],
+      "responses": [
+        "The college offers B.Tech, M.Tech, BCA, MCA, and more. Let me know if you need details about any specific program.",
+        "B.Tech is a four-year program, while MCA takes three years. Do you need a breakdown of the subjects covered?",
+        "There are multiple specializations within each course. Which field are you interested in?",
+        "Some courses have entrance exams, while others offer direct admission. Need details on the admission process?",
+        "Different programs have different eligibility criteria. Want me to guide you through them?"
+      ]
+    },
+    {
+      "tag": "btech_courses",
+      "patterns": [
+        "What BTech courses are available?",
+        "Tell me about BTech programs",
+        "Do you offer BTech in Computer Science?",
+        "What are the specializations in BTech?",
+        "How long is a BTech course?"
+      ],
+      "responses": [
+        "Our BTech program offers specializations in Computer Science, Mechanical, Civil, Electrical, Electronics & Communication, and Information Technology. Which one are you interested in?",
+        "BTech is a 4-year undergraduate program focusing on engineering and technology. Would you like details on eligibility and admission?",
+        "Yes, we offer BTech in multiple specializations, including Computer Science. Let me know if you need details about the syllabus or fee structure!",
+        "You can choose from various BTech branches like CSE, IT, Mechanical, Civil, Electrical, and ECE. Need help selecting the right one?",
+        "BTech courses emphasize theoretical and practical knowledge to prepare students for the industry. Want more details on career opportunities?"
+      ]
+    },
+    {
+      "tag": "polytechnic_courses",
+      "patterns": [
+        "What Polytechnic courses are available?",
+        "Tell me about Polytechnic courses",
+        "Do you offer diploma programs?",
+        "What are the Polytechnic branches?",
+        "How long is a Polytechnic course?"
+      ],
+      "responses": [
+        "Our Polytechnic program offers diplomas in various engineering fields such as Mechanical, Civil, Electrical, Computer Science, and Electronics. Which one are you interested in?",
+        "Polytechnic courses are typically 3-year diploma programs. Would you like details on eligibility and admission?",
+        "Yes, we offer diploma programs in multiple disciplines. Let me know if you need a syllabus or fee structure!",
+        "You can choose from branches like Mechanical, Civil, Electrical, and Computer Science. Need help selecting the right one?",
+        "Polytechnic programs focus on practical and technical skills, making students industry-ready. Want more details on career opportunities?"
+      ]
+    },
+    {
+      "tag": "syllabus",
+      "patterns": [
+        "Where can I find the syllabus?",
+        "What is the syllabus for BTech?",
+        "Tell me the syllabus for MCA",
+        "Do you have the syllabus for my course?",
+        "Can I download the syllabus?",
+        "What is the syllabus for Polytechnic"
+      ],
+      "responses": [
+        "The syllabus for each course is available on the official college website. Would you like a direct link?",
+        "You can find the syllabus in the student portal. Let me know which course you're looking for!",
+        "Each department provides a detailed syllabus. Do you need a PDF version?",
+        "For the latest syllabus, check with the academic office or visit the official college portal.",
+        "I can help with that! Which course syllabus are you looking for?",
+        "The Polytechnic syllabus includes core subjects in engineering, practical training, and industry-focused coursework. Would you like details for a specific branch?"
+      ]
+    },    
+    {
+      "tag": "college_fees",
+      "patterns": [
+        "What is the fee structure?",
+        "How much does BTech cost?",
+        "What are the fees for MCA?",
+        "Are there any scholarships available?",
+        "Can I pay the fees in installments?"
+      ],
+      "responses": [
+        "The fee structure varies by course. Generally, B.Tech fees range between 16k to 42k per year.",
+        "Yes! There are scholarships available based on merit and financial need. Do you want details on eligibility?",
+        "Installment options are available for some programs. You can check with the accounts department for further details."
+      ]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": [
+        "How can I get admission?",
+        "What are the admission requirements?",
+        "Is there an entrance exam?",
+        "When do admissions start?",
+        "What documents are required for admission?"
+      ],
+      "responses": [
+        "Admission is based on entrance exams and merit. Would you like to know the specific process for your desired course?",
+        "Yes, some programs require entrance exams, while others offer direct admission. Let me know which course you're interested in!",
+        "Admissions usually open in April-June. Do you want updates on important deadlines?"
+      ]
+    },
+    {
+      "tag": "campus_facilities",
+      "patterns": [
+        "What facilities does the college have?",
+        "Is there a library?",
+        "Do you have a gym on campus?",
+        "What about hostels?",
+        "Are there labs for practical work?"
+      ],
+      "responses": [
+        "Yes! Our campus has a well-stocked library, modern labs, a gym, and hostel facilities. Would you like more details about any of these?",
+        "We have state-of-the-art labs for different departments, a gym for fitness enthusiasts, and comfortable hostels for students. Need help with anything specific?"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the math book look sad? Because it had too many problems!",
+        "Whats a computers favorite snack? Microchips!",
+        "Why dont skeletons fight each other? They dont have the guts!"
+      ]
+    },
+    {
+      "tag": "result",
+      "patterns": [
+        "What is my SGPA this semester?",
+        "What is my CGPA?",
+        "Do you know my result?",
+        "Tell me my current SGPA?"
+      ],
+      "responses": [
+        "I can help with that! Please provide your student ID, e.g., 434121010021."
+      ]
+    }
+  ]
+}
