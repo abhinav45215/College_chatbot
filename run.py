@@ -24,8 +24,7 @@ def normal_chat():
         if course is not None:
             course_details = Course.query.filter_by(name=course)[0]
             response = f"{course_details.name} takes {course_details.duration}"
-            link = f'http://127.0.0.1:5000/courses/syllabus/{
-                course_details.id}/'
+            link = f"{request.host_url}courses/syllabus/{course_details.id}/"
             return jsonify({
                 'response': response, 'tag': tag,
                 "data": {
@@ -40,7 +39,7 @@ def normal_chat():
 
     if (tag == "holidays"):
         holiday = Holidays.query.first()
-        link = f'http://127.0.0.1:5000/holidays/download/{holiday.id}/'
+        link = f"{request.host_ur}/holidays/download/{holiday.id}/"
         response = f"Holidays for year {holiday.year} is down below"
         return jsonify({
             'response': response, 'tag': tag,
