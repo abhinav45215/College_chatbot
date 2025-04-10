@@ -1,7 +1,4 @@
 #!/bin/bash
-
-echo "Installing dependencies..."
 pip install -r requirements.txt
-
-echo "Running training script..."
-python3 train.py
+python -m spacy download en_core_web_sm
+python train.py
