@@ -17,7 +17,7 @@ def normal_chat():
     response, tag = chatbot_response(msg)
 
     if (tag == 'result'):
-        return jsonify({'response': ok, 'tag': ok, 'https://rtmnuresults.org/': 'result/'})
+        return jsonify({'response': ok, 'tag': ok, 'url': 'https://rtmnuresults.org/'})
 
     if (tag == 'courses'):
         course = course_matcher(msg)
@@ -50,7 +50,7 @@ def normal_chat():
         })
 
     if (tag == 'faculty'):
-        data = requests.get(url='http://127.0.0.1:5000/teachers/api/')
+        data = requests.get(url='https://college-chatbot-p17y.onrender.com/teachers/')
         for item in data.json():
             teacher = f"{item['name']} ({item['department']})"
             response = response + "\n " + teacher
