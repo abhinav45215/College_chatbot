@@ -64,7 +64,7 @@ def normal_chat():
       elif tag == 'faculty':           
     try:
         url = f"{request.host_url}teachers/api/"
-        data = requests.get(url=url)  # ✅ Indented correctly
+        data = requests.get(url=url)  
 
         if data.status_code == 200:
             response += "\n" + "\n".join(
