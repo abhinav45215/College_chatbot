@@ -61,19 +61,20 @@ def normal_chat():
             else:
                 response = "No holiday data found."
 
-      elif tag == 'faculty':           
-    try:
-        url = f"{request.host_url}teachers/api/"
-        data = requests.get(url=url)  
+              elif tag == 'faculty':
+            try:
+                url = f"{request.host_url}teachers/api/"
+                data = requests.get(url=url)
 
-        if data.status_code == 200:
-            response += "\n" + "\n".join(
-                f"{item['name']} ({item['department']})" for item in data.json()
-            )
-        else:
-            response += "\nError fetching faculty data."
-    except Exception as e:
-        response += f"\nFailed to fetch faculty info: {str(e)}" #End
+                if data.status_code == 200:
+                    response += "\n" + "\n".join(
+                        f"{item['name']} ({item['department']})" for item in data.json()
+                    )
+                else:
+                    response += "\nError fetching faculty data."
+            except Exception as e:
+                response += f"\nFailed to fetch faculty info: {str(e)}"
+
 
 
         return jsonify({'response': response, 'tag': tag})
