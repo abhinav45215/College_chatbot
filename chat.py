@@ -47,3 +47,5 @@ def chatbot_response(sentence):
 
 
 print('hi')
+print('hii')
+print('hello')
