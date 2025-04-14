@@ -61,7 +61,7 @@ def normal_chat():
             else:
                 response = "No holiday data found."
 
-      elif tag == 'faculty': # Start
+      elif tag == 'faculty':           
     try:
         url = f"{request.host_url}teachers/api/"
         data = requests.get(url=url)  # ✅ Indented correctly
