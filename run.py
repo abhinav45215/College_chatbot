@@ -29,7 +29,7 @@ def normal_chat():
                 'response': response, 'tag': tag,
                 "data": {
                     "filename": f"{course_details.name} syllabus",
-                    "https://www.nagpuruniversity.ac.in/index.php/": link
+                    "link": https://www.nagpuruniversity.ac.in/index.php/
                 }
             })
         else:
