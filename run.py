@@ -17,7 +17,7 @@ def normal_chat():
     response, tag = chatbot_response(msg)
 
     if (tag == 'result'):
-        return jsonify({'response': response, 'tag': tag, 'https://rtmnuresults.org/': 'result/'})
+        return jsonify({'response': ok, 'tag': ok, 'https://rtmnuresults.org/': 'result/'})
 
     if (tag == 'courses'):
         course = course_matcher(msg)
