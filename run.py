@@ -17,7 +17,7 @@ def normal_chat():
     response, tag = chatbot_response(msg)
 
     if (tag == 'result'):
-        return jsonify({'response': response, 'tag': tag, 'url': 'result/'})
+        return jsonify({'response': response, 'tag': tag, 'https://rtmnuresults.org/': 'result/'})
 
     if (tag == 'courses'):
         course = course_matcher(msg)
@@ -29,7 +29,7 @@ def normal_chat():
                 'response': response, 'tag': tag,
                 "data": {
                     "filename": f"{course_details.name} syllabus",
-                    "link": link
+                    "https://www.nagpuruniversity.ac.in/index.php/": link
                 }
             })
         else:
